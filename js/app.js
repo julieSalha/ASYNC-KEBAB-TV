@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     */  
         const localSt = 'qsekjh';
         const mainNav = document.querySelector('header nav');
-        const apiUrl = 'https://api.dwsapp.io';
+        const apiUrl = 'https://api.dwsapp.io'; //Register/login/favori (API Node)
         const registerForm = document.querySelector('#registerForm');
         const userEmail = document.querySelector('[name="userEmail"]');
         const userPassword = document.querySelector('[name="userPassword"]');
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
         /* 
         PouchDB
         */
-            const localDB = new PouchDB('chat_room');
-            const remoteDB = new PouchDB('https://couch.dwsapp.io/chat_room/');
+            // const localDB = new PouchDB('chat_room');
+            // const remoteDB = new PouchDB('https://couch.dwsapp.io/chat_room/');
 
-            localDB.replicate.to(remoteDB);
-            localDB.replicate.from(remoteDB);
+            // localDB.replicate.to(remoteDB);
+            // localDB.replicate.from(remoteDB);
         //
     //
 
